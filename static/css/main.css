@@ -1,8 +1,8 @@
 /** CSS that is configurable through the plugin settings are applied in Cards.html file. */
 :root {
-  --font-family: '__inter_5b82ff', '__inter_Fallback_5b82ff', Inter,
-    ui-sans-serif, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-    'Segoe UI Symbol', 'Noto Color Emoji', system-ui;
+  --font-family: "__inter_5b82ff", "__inter_Fallback_5b82ff", Inter,
+    ui-sans-serif, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji", system-ui;
   --font-size-normal: 1rem;
   --font-size-small: 0.9rem;
   --font-size-large: 1.4rem;
@@ -65,6 +65,7 @@ pre {
 /* ============================== Images ============================== */
 img {
   max-width: 100%;
+  max-height: 500px;
   height: auto;
   vertical-align: middle;
 }
@@ -213,7 +214,8 @@ div.microblog_conversation {
   border-radius: 8px;
   padding: 30px;
   margin-top: 25px;
-  box-shadow: var(--shadow-color) 0px 30px 30px -50px,
+  box-shadow:
+    var(--shadow-color) 0px 30px 30px -50px,
     var(--shadow-color) 0px 30px 30px -30px;
   background-color: var(--card-background-color);
   color: var(--card-text-color);
@@ -355,8 +357,8 @@ blockquote {
 }
 
 /* ============================== Forms ============================== */
-input[type='email'],
-input[type='text'] {
+input[type="email"],
+input[type="text"] {
   box-sizing: border-box;
   border: 1px solid var(--shadow-color);
   border-radius: 5px;
@@ -366,10 +368,10 @@ input[type='text'] {
   padding: 10px;
 }
 
-input[id='q'],
-input[id='input_search'],
-input[type='search'],
-input[type='q'] {
+input[id="q"],
+input[id="input_search"],
+input[type="search"],
+input[type="q"] {
   box-sizing: border-box;
   border: 1px solid var(--shadow-color);
   border-radius: 5px;
@@ -380,7 +382,7 @@ input[type='q'] {
   padding: 10px;
 }
 
-textarea[name='message'] {
+textarea[name="message"] {
   box-sizing: border-box;
   border: 1px solid var(--shadow-color);
   border-radius: 5px;
@@ -390,7 +392,7 @@ textarea[name='message'] {
   padding: 10px;
 }
 
-form input[type='submit'],
+form input[type="submit"],
 form button {
   background-color: var(--body-accent-color);
   border: 0;
